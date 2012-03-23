@@ -1,1 +1,0 @@
-see Help.rtf for details in NetSoapClientCs folder
