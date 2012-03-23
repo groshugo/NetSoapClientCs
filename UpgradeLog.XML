@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NetSoapClientCs">
+</Property><Property Name="Solution File" Value="C:\soap-sec\soap-sec-2.5\NetSoapClientCs.sln">
+</Property><Property Name="Date" Value="Thursday, March 22, 2012">
+</Property><Property Name="Time" Value="12:47 PM">
+</Property></Properties><Event ErrorLevel="0" Project="NetSoapClientCs" Source="NetSoapClientCs\NetSoapClientCs.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="NetSoapClientCs" Source="NetSoapClientCs\NetSoapClientCs.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Xsd2Xml" Source="Xsd2Xml\Xsd2Xml.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Xsd2Xml" Source="Xsd2Xml\Xsd2Xml.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="NetSoapClientCs.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NetSoapClientCs.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="NetSoapClientCs" Source="NetSoapClientCs\NetSoapClientCs.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Xsd2Xml" Source="Xsd2Xml\Xsd2Xml.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
