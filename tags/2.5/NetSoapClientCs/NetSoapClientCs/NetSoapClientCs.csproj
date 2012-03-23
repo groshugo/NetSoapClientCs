@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A6E575E-9404-4407-BA41-891D5A79BA99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetSoapClientCs</RootNamespace>
+    <AssemblyName>NetSoapClientCs</AssemblyName>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <SignAssembly>false</SignAssembly>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ManifestCertificateThumbprint>0950DC639DCE367DD4689CEADCE2DA019AC04475</ManifestCertificateThumbprint>
+    <ManifestKeyFile>signing.pkcs12</ManifestKeyFile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>soap-sec.ico</ApplicationIcon>
+    <StartupObject>NetSoapClientCs.Program</StartupObject>
+    <PublishUrl>C:\soap-sec-2.5\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>soap-client</ProductName>
+    <PublisherName>gryb.info</PublisherName>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>2.4.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Services2, Version=2.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Microsoft.Web.Services2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PerformanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerformanceReport.Designer.cs">
+      <DependentUpon>PerformanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SendEnvelope.cs" />
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetSoapClientCs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetSoapClientCs.Designer.cs">
+      <DependentUpon>NetSoapClientCs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Help.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetSoapClientCs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NetSoapClientCs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="App.config" />
+    <None Include="NetSoapClientCs_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SoapActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoapActions.Designer.cs">
+      <DependentUpon>SoapActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XmlProcessor.cs" />
+    <None Include="signing.pkcs12" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PerformanceReport.resx">
+      <DependentUpon>PerformanceReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.rtf" />
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoapActions.resx">
+      <DependentUpon>SoapActions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XsltFile.xslt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\editundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\charactergrowfont.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\charactershrinkfont.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\editcopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\editcut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\editpaste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\editredo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fileopen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\gen-files.png" />
+    <None Include="images\gen-run.jpg" />
+    <None Include="images\roll.ico" />
+    <None Include="images\roll.png" />
+    <None Include="images\gen-run-narrow.png" />
+    <None Include="images\gen-run-narrow-left.png" />
+    <EmbeddedResource Include="PerformanceReport.rtf" />
+    <None Include="images\report.png" />
+    <Content Include="soap-sec.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xsd2Xml\Xsd2Xml.csproj">
+      <Project>{F5A9B095-E6B4-4765-A64F-48CC4584E62B}</Project>
+      <Name>Xsd2Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
